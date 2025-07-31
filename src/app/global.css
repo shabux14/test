@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes gradient-xy {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+.animate-gradient-xy {
+  background-size: 200% 200%;
+  animation: gradient-xy 12s ease infinite;
+}
+
+@keyframes blob-slow {
+  0%, 100% { transform: scale(1) translate(0,0); }
+  33% { transform: scale(1.1) translate(30px, -20px); }
+  66% { transform: scale(0.9) translate(-20px, 20px); }
+}
+.animate-blob-slow {
+  animation: blob-slow 10s ease-in-out infinite;
+}
